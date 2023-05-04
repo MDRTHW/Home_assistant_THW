@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "905610868695",
+    "firebase_url": "https://home-assistant-a83d6-default-rtdb.firebaseio.com",
+    "project_id": "home-assistant-a83d6",
+    "storage_bucket": "home-assistant-a83d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905610868695:android:ca545179b00399ca697d92",
+        "android_client_info": {
+          "package_name": "com.example.home_assistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905610868695-ia7erbu1pb9n21i7bjlqgt2tqjil170q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5hrlUe8MydDvj_WzpL1D7uFG812ijKp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905610868695-ia7erbu1pb9n21i7bjlqgt2tqjil170q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

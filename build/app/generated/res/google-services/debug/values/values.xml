@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">905610868695-ia7erbu1pb9n21i7bjlqgt2tqjil170q.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://home-assistant-a83d6-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">905610868695</string>
+    <string name="google_api_key" translatable="false">AIzaSyD5hrlUe8MydDvj_WzpL1D7uFG812ijKp4</string>
+    <string name="google_app_id" translatable="false">1:905610868695:android:ca545179b00399ca697d92</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD5hrlUe8MydDvj_WzpL1D7uFG812ijKp4</string>
+    <string name="google_storage_bucket" translatable="false">home-assistant-a83d6.appspot.com</string>
+    <string name="project_id" translatable="false">home-assistant-a83d6</string>
+</resources>
