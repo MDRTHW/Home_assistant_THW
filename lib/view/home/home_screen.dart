@@ -43,16 +43,46 @@ class _HomeScreenState extends State<HomeScreen> {
     Offset top_distance = Offset(-20, -15);
     Offset button_distance = isPressed? Offset(10, 10) : Offset(13.6, 13.6);
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Home"),
-        backgroundColor: Colors.teal,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(70),
+        child: AppBar(
+          
+          //leading: Icon(Icons.home, color: Colors.black,),
+          title: Container(
+            width: 50,
+            height: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              color: backgroundColor,
+              boxShadow: [
+                ds.BoxShadow(
+                  blurRadius: blur,
+                  offset: Offset(-5, -5),
+                  color: Colors.white,
+                  inset: true,
+                ),
+                ds.BoxShadow(
+                  blurRadius: blur,
+                  offset: Offset(5, 5),
+                  color: Color(0xFFA7A9AF),
+                  inset: true,
+                )
+              ],
+            ),
+            child: Icon(Icons.home, color: Colors.black,),
+          ),
+          backgroundColor: backgroundColor,
+          centerTitle: true,
+          shadowColor: Colors.transparent,
+        ),
       ),
       backgroundColor: backgroundColor,
       body: SafeArea(
         child: Column(
           children: [
             Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
                   padding: const EdgeInsets.symmetric(
