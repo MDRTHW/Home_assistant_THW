@@ -28,23 +28,28 @@ class _HomeScreenState extends State<HomeScreen> {
       });
       print(data);
     });
+    humidifier_ref.onValue.listen((DatabaseEvent event) {
+      final humidifier_data = event.snapshot;
+      setState(() {
+        isPressed = humidifier_data.child("status").value.toString()=='true';
+      });
+      print(humidifier_data);
+    });
   }
 
-  bool isPressed = false;
+   bool isPressed = false;
   @override
-
-
-//Offset(-13.6, -13.6)
   Widget build(BuildContext context) {
     final backgroundColor = const Color(0xFFE7ECEF);
     double blur = 30.0;
+    double icon_blur = 8.0;
     double button_blur = isPressed? 5:30;
     Offset bottom_distance = Offset(15, 20);
     Offset top_distance = Offset(-20, -15);
     Offset button_distance = isPressed? Offset(10, 10) : Offset(13.6, 13.6);
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(70),
+        preferredSize: Size.fromHeight(100),
         child: AppBar(
           
           //leading: Icon(Icons.home, color: Colors.black,),
@@ -56,20 +61,20 @@ class _HomeScreenState extends State<HomeScreen> {
               color: backgroundColor,
               boxShadow: [
                 ds.BoxShadow(
-                  blurRadius: blur,
+                  blurRadius: icon_blur,
                   offset: Offset(-5, -5),
                   color: Colors.white,
                   inset: true,
                 ),
                 ds.BoxShadow(
-                  blurRadius: blur,
+                  blurRadius: icon_blur,
                   offset: Offset(5, 5),
                   color: Color(0xFFA7A9AF),
                   inset: true,
                 )
               ],
             ),
-            child: Icon(Icons.home, color: Colors.black,),
+            child: Icon(Icons.home, color: Colors.teal,),
           ),
           backgroundColor: backgroundColor,
           centerTitle: true,
